@@ -1,0 +1,51 @@
+@import './animations';
+@import './color-mode-themes.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--neutral);
+  color: var(--text-color);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+input:focus,
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary) !important;
+  --tw-ring-color: var(--primary) !important;
+}
+
+.bg-skeleton {
+  background: var(--skeleton-background);
+  background: linear-gradient(
+    110deg,
+    var(--skeleton-primary) 8%,
+    var(--skeleton-secondary) 18%,
+    var(--skeleton-primary) 33%
+  );
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}

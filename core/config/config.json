@@ -1,0 +1,23 @@
+{
+  "production": {
+    "url": "https://www.nuxt3tailwind.com",
+    "api_url": "https://api.nuxt3tailwind.com",
+    "cdn_url": "https://cdn.nuxt3tailwind.com",
+    "cookie_name": "ANTELOPEJS_WEBAUTH",
+    "datatable_namespace": "MeteorNet_Core"
+  },
+  "staging": {
+    "url": "https://beta.nuxt3tailwind.com",
+    "api_url": "https://api.beta.nuxt3tailwind.com",
+    "cdn_url": "https://cdn.beta.nuxt3tailwind.com",
+    "cookie_name": "ANTELOPEJS_WEBAUTH",
+    "datatable_namespace": "MeteorNet_Core"
+  },
+  "development": {
+    "url": "http://altab.local:3000",
+    "api_url": "http://altab.local:5000",
+    "cdn_url": "http://altab.local:5000",
+    "cookie_name": "ANTELOPEJS_WEBAUTH",
+    "datatable_namespace": "MeteorNet_Core"
+  }
+}

@@ -1,0 +1,66 @@
+$colors-light: (
+  primary: #0a61be,
+  secondary: #969494,
+  accent: #1fb2a6,
+  neutral: #ffffff,
+  background: #f8fafc,
+  info: #3abff8,
+  success: #16a34a,
+  warning: #fbbd23,
+  error: #f43f5e,
+
+  notify-bg: #ffffff,
+  border-light: #e2e8f0,
+  input-disabled: #e2e8f0,
+
+  skeleton-background: #e2e5e7,
+  skeleton-primary: #ebebeb,
+  skeleton-secondary: #f5f4f4,
+
+  text-color: #111827,
+);
+$colors-dark: (
+  primary: #0a61be,
+  secondary: #ffffff,
+  accent: #1fb2a6,
+  neutral: #0b1121,
+  background: #1e293b,
+  info: #3abff8,
+  success: #16a34a,
+  warning: #fbbd23,
+  error: #f43f5e,
+
+  notify-bg: #131a25,
+  border-light: #e2e8f0,
+  input-disabled: #e2e8f0,
+
+  skeleton-background: #e2e5e7,
+  skeleton-primary: #ebebeb,
+  skeleton-secondary: #f5f4f4,
+
+  text-color: #ffffff,
+);
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@mixin generate_colors($colors) {
+  // Colors
+  @each $color, $value in $colors {
+    @if str-slice(#{$value}, 1, 1) == '#' {
+      --#{$color}: #{$value};
+      --#{$color}-rgb: #{hexToRGB($value)};
+    } @else {
+      --#{$color}: var(--#{$value});
+      --#{$color}-rgb: var(--#{$value}-rgb);
+    }
+  }
+}
+
+:root {
+  @include generate_colors($colors-light);
+}
+:root[data-theme='dark'] {
+  @include generate_colors($colors-dark);
+}

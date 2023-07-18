@@ -1,0 +1,37 @@
+{
+  "page": {
+    "home": {
+      "title": "Build your own website \nusing our expertise",
+      "titleKit": "Kits features",
+      "desc1": "Nuxt 3 Tailwind css starter kit, ",
+      "desc2": "used by the best",
+      "btnCounter": "Oh look ! a counter : ",
+      "subtitle_1": "Nuxt 3 Tailwind css starter kit, ",
+      "subtitle_2": "used by the best",
+      "main_features": "Main features",
+      "sub_features": "Sub features"
+    }
+  },
+  "button": {
+    "ok": "Ok",
+    "no": "no",
+    "yes": "yes",
+    "cancel": "cancel",
+    "next": "next",
+    "home": "Home"
+  },
+  "error": {
+    "401": "You are not authorized to access this page",
+    "404": "Page not found",
+    "500": "Internal server error",
+    "invalid_email": "Invalid email address",
+    "invalid_password": "Password must be at least 8 characters long and contain at least one number and one capital letter",
+    "passwords_not_match": "Passwords do not match",
+    "must_be_checked": "This field must be checked",
+    "required": "This field is required",
+    "invalidDate": "Invalid Date",
+    "invalid_phone": "Invalid phone number",
+    "invalid_iso2": "Invalid ISO2 code",
+    "server-error": "Internal server error"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "nuxt3-tailwind-template-staging",
+      "script": "yarn start-staging",
+      "watch": false,
+      "exec_mode": "fork"
+    },
+    {
+      "name": "nuxt3-tailwind-template-prod",
+      "script": "yarn start-prod",
+      "watch": false,
+      "exec_mode": "fork"
+    }
+  ]
+}
